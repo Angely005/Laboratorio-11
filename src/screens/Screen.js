@@ -5,7 +5,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { loadHistory, saveHistory, saveCompat } from '../storage/Storage';
 import HistoryList from '../components/List';
 
-export default function CameraScreen() {
+export default function Screen() {
   const [permission, requestPermission] = useCameraPermissions();
   const [photo, setPhoto] = useState(null);
   const [savedConfirmation, setSavedConfirmation] = useState(false);
